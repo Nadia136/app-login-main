@@ -12,9 +12,8 @@ export function DefaultPage() {
             </p>
 
             <p id="zero-links">
-                Navigate to <Link to={'/auth'} >Auth</Link>
+                Navigate to <Link to={'/auth'} >Authentification</Link>
             </p>
         </div>
-
     )
 }

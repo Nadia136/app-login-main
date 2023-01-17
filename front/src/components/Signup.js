@@ -50,12 +50,22 @@ export function Singup(props) {
                             </span>
                         </div>
                         <div className="form-group mt-3">
-                            <label>Full Name</label>
+                            <label>First Name</label>
                             <input
-                                name="fullName"
+                                name="First Name"
                                 type="text"
                                 className="form-control mt-1"
-                                placeholder="e.g Jane Doe"
+                                placeholder="e.g Mourad"
+                                onChange={(e) => inputChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="form-group mt-3">
+                            <label>Last Name</label>
+                            <input
+                                name="Last Name"
+                                type="text"
+                                className="form-control mt-1"
+                                placeholder="e.g Ben Foulen"
                                 onChange={(e) => inputChangeHandler(e)}
                             />
                         </div>
@@ -81,6 +91,25 @@ export function Singup(props) {
                                 placeholder="Password"
                                 onChange={(e) => inputChangeHandler(e)}
                             />
+                        </div>
+                        <div className="form-group mt-3">
+                            <label>Verify Password</label>
+                            <input
+                                name="password"
+                                type="password"
+                                required
+                                minLength={6}
+                                className="form-control mt-1"
+                                placeholder="Verify Your Password"
+                                onChange={(e) => inputChangeHandler(e)}
+                            />
+                        </div>
+                        <div className="form-group mt-3" >
+                            <label>Role</label>
+                            <select>
+                                <option value="instructor">Instructor</option>
+                                <option selected value="student">Student</option>
+                            </select>
                         </div>
                         <div className="d-grid gap-2 mt-3">
                             <button type="submit" className="btn btn-primary" disabled={isLoading}>

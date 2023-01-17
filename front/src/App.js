@@ -3,9 +3,12 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom"; 
 import { Auth } from './components/Auth';
 import { DefaultPage } from './components/DefaultPage';
-import { Dashboard } from "./components/Dashboard";
+import { Learn } from "./components/Learn";
 import { ForgotPassword } from './components/forgotPassword';
 import { ResetPasswordForm } from "./components/ResetPassword";
+import { AllSubjects } from "./components/AllSubjects";
+import { MyCourses } from "./components/MyCourses";
+import { MyModules } from "./components/MyModules";
 
 function App() {
     return (
@@ -15,8 +18,11 @@ function App() {
                 <Route path="/auth" element={<Auth />} />
                 <Route path='/forgotpassword' element={<ForgotPassword />} /> 
                 <Route path="/reset/:userId/:token" element={<ResetPasswordForm/>} />
-                <Route path="/dashboard" element={<Dashboard />} />
-            </Routes>
+                <Route path="/learn" element={<Learn />} />
+                <Route path="/allsubjects" element={<AllSubjects />} />
+                <Route path="/mycourses" element={<MyCourses />} />
+                <Route path="/mymodules" element={<MyModules />} />
+          </Routes>
         </BrowserRouter>
     )
 }

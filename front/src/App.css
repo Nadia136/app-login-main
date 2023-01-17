@@ -62,11 +62,11 @@
   #zero-links {
     margin: 2rem auto;
     text-align: center;
-    color: #818181;
+    color: #3f3f17ba;
   }
   
   #zero-links a {
-    color: #818181;
+    color: #3f3f17ba;
   } 
   #zero-links a:hover {
     color: #000000;
