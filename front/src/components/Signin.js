@@ -82,7 +82,6 @@ export function Signin(props) {
                             </button>
                         </div>
                         <p className="text-center mt-2">
-                        
                             Forgot <Link to="/forgotpassword">password?</Link>
                         </p>
                     </div>

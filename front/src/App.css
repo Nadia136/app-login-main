@@ -54,8 +54,8 @@
   }
   
   #zero-state:before {
-    display: block;
-    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    margin-bottom: 1rem ;
     content: url('C:/Users/lenovo/Downloads/app-login-main/app-login-main/front/public/logo.png');
   }
 
